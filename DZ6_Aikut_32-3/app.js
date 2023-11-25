@@ -1,31 +1,74 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const editButtons = document.querySelectorAll('.edit-btn')
-    const deleteButtons = document.querySelectorAll('.delete-btn')
-    const modal = document.getElementById('modal')
-    const closeBtn = document.getElementById('close')
-    const saveBtn = document.getElementById('saveBtn')
-    const editText = document.getElementById('editText')
-    const newText = document.getElementById('newText')
-    let currentItem
-    editButtons.forEach((button) => {
-        button.addEventListener('click', function() {
-            currentItem = this.parentElement
-            const currentText = currentItem.querySelector('span').textContent
-            editText.value = currentText
-            modal.style.display = 'block'
+const createButton = document.querySelector('#create_button')
+const input = document.querySelector('#input')
+const todoList = document.querySelector('.todo_list')
+
+const createTodo = () => {
+    if(input.value.trim() === ''){
+        return alert('Произошла ошибка, введите какой-нибудь текст')
+    }
+
+    const div = document.createElement('div')
+    div.setAttribute('class', 'block_text')
+
+    const divButton = document.createElement('div')
+    divButton.setAttribute('class', 'div_button')
+
+    const deleteButton = document.createElement('button')
+    deleteButton.setAttribute('class', 'delete_button')
+    deleteButton.innerText = 'DELETE'
+
+    const editButton = document.createElement('button')
+    editButton.setAttribute('class', 'edit_button')
+    editButton.innerText = 'EDIT'
+
+    const text = document.createElement('h3')
+    text.innerText = input.value
+    text.addEventListener('click', ()=>{
+        text.classList.toggle('toggle')
+    })
+
+    deleteButton.addEventListener('click', ()=>{
+        div.remove()
+    })
+
+    editButton.addEventListener('click', ()=>{
+        const editForm = document.createElement('form')
+        editForm.setAttribute('class', 'edit_form')
+
+        const editInput = document.createElement('input')
+        editInput.setAttribute('class', 'edit_input')
+        editInput.setAttribute('type', 'text')
+        editInput.setAttribute('value', text.innerText)
+
+        const editSubmit = document.createElement('button')
+        editSubmit.setAttribute('class', 'edit_submit')
+        editSubmit.setAttribute('type', 'submit')
+        editSubmit.innerText = 'Submit'
+
+        editForm.append(editInput, editSubmit)
+        div.append(editForm)
+
+        editForm.addEventListener('submit', (event)=>{
+            event.preventDefault()
+            const newText = editInput.value
+            if(newText){
+                text.innerText = newText
+            }
+            editForm.remove()
         })
     })
-    deleteButtons.forEach((button) => {
-        button.addEventListener('click', function() {
-            this.parentElement.remove()
-        })
-    })
-    closeBtn.addEventListener('click', function() {
-        modal.style.display = 'none'
-    })
-    saveBtn.addEventListener('click', function() {
-        const newContent = newText.value
-        currentItem.querySelector('span').textContent = newContent
-        modal.style.display = 'none'
-    })
+
+    divButton.append(deleteButton, editButton)
+    div.append(text, divButton)
+
+    todoList.prepend(div)
+    input.value = ''
+}
+
+createButton.onclick = () => createTodo()
+
+input.addEventListener('keydown', (event)=>{
+    if(event.code === 'Enter'){
+        createTodo()
+    }
 })
