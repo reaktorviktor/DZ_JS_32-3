@@ -1,0 +1,29 @@
+.riddle {
+    margin-bottom: 20px;
+}
+
+.riddle-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.answer {
+    display: none;
+    margin-top: 5px;
+    font-style: italic;
+    color: #19ee2a;
+}
+* {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+button {
+    padding: 10px 20px;
+    border: white solid 1px;
+    border-radius: 5px;
+}
+p {
+    font-size: 25px;
+}
