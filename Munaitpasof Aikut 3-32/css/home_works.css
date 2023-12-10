@@ -43,12 +43,13 @@
     width: 500px;
     border: 1px solid var(--orange);
     position: relative;
-    margin: 0 auto;
-    border-radius: 20px;
+    margin: auto;
     background-image: url("/images/Gir 5.gif");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    /*border-radius: 50%;*/
+    overflow: hidden;
 }
 
 .inner_parent_block {
@@ -58,18 +59,161 @@
     border-radius: 18px;
 }
 
-.child_block {
+.child_block1 {
     position: absolute;
-    top: 0;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background-color: red;
-    border-radius: 20px;
+    border-radius: 50%;
     background-image: url("/images/images.jpeg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*.child_block2 {*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: red;*/
+/*    border-radius: 50%;*/
+/*    background-image: url("/images/images.jpeg");*/
+/*    background-position: top center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+/*.child_block3 {*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: red;*/
+/*    border-radius: 50%;*/
+/*    background-image: url("/images/images.jpeg");*/
+/*    background-position: top center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+/*.child_block4 {*/
+/*    position: absolute;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    background-color: red;*/
+/*    border-radius: 50%;*/
+/*    background-image: url("/images/images.jpeg");*/
+/*    background-position: top center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+/*.child_block5 {*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: red;*/
+/*    border-radius: 50%;*/
+/*    background-image: url("/images/images.jpeg");*/
+/*    background-position: top center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+/*.child_block6 {*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: red;*/
+/*    border-radius: 50%;*/
+/*    background-image: url("/images/images.jpeg");*/
+/*    background-position: top center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+/*.child_block7 {*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: red;*/
+/*    border-radius: 50%;*/
+/*    background-image: url("/images/images.jpeg");*/
+/*    background-position: top center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+/*.child_block8 {*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: red;*/
+/*    border-radius: 50%;*/
+/*    background-image: url("/images/images.jpeg");*/
+/*    background-position: top center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}.child_block9 {*/
+/*     position: absolute;*/
+/*     width: 100px;*/
+/*     height: 100px;*/
+/*     background-color: red;*/
+/*     border-radius: 50%;*/
+/*     background-image: url("/images/images.jpeg");*/
+/*     background-position: top center;*/
+/*     background-repeat: no-repeat;*/
+/*     background-size: cover;*/
+/* }*/
+/*.child_block10 {*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: red;*/
+/*    border-radius: 50%;*/
+/*    background-image: url("/images/images.jpeg");*/
+/*    background-position: top center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+/*.child_block11 {*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: red;*/
+/*    border-radius: 50%;*/
+/*    background-image: url("/images/images.jpeg");*/
+/*    background-position: top center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+/*.child_block12 {*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: red;*/
+/*    border-radius: 50%;*/
+/*    background-image: url("/images/images.jpeg");*/
+/*    background-position: top center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+/*.child_block13 {*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: red;*/
+/*    border-radius: 50%;*/
+/*    background-image: url("/images/images.jpeg");*/
+/*    background-position: top center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+/*.child_block14 {*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: red;*/
+/*    border-radius: 50%;*/
+/*    background-image: url("/images/images.jpeg");*/
+/*    background-position: top center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+
 .inner_move_block {
     margin-top: 50px;
 }
