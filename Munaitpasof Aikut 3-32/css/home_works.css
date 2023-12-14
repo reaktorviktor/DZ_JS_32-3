@@ -1,6 +1,7 @@
 
 /* GMAIL BLOCK */
 
+
 .gmail_block {
     background: black;
     padding: 100px 0;
@@ -61,8 +62,8 @@
 
 .child_block1 {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 20px;
+    height: 20px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -70,148 +71,148 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*.child_block2 {*/
-/*    position: absolute;*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    background-image: url("/images/images.jpeg");*/
-/*    background-position: top center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
-/*.child_block3 {*/
-/*    position: absolute;*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    background-image: url("/images/images.jpeg");*/
-/*    background-position: top center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
-/*.child_block4 {*/
-/*    position: absolute;*/
-/*    width: 20px;*/
-/*    height: 20px;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    background-image: url("/images/images.jpeg");*/
-/*    background-position: top center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
-/*.child_block5 {*/
-/*    position: absolute;*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    background-image: url("/images/images.jpeg");*/
-/*    background-position: top center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
-/*.child_block6 {*/
-/*    position: absolute;*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    background-image: url("/images/images.jpeg");*/
-/*    background-position: top center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
-/*.child_block7 {*/
-/*    position: absolute;*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    background-image: url("/images/images.jpeg");*/
-/*    background-position: top center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
-/*.child_block8 {*/
-/*    position: absolute;*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    background-image: url("/images/images.jpeg");*/
-/*    background-position: top center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}.child_block9 {*/
-/*     position: absolute;*/
-/*     width: 100px;*/
-/*     height: 100px;*/
-/*     background-color: red;*/
-/*     border-radius: 50%;*/
-/*     background-image: url("/images/images.jpeg");*/
-/*     background-position: top center;*/
-/*     background-repeat: no-repeat;*/
-/*     background-size: cover;*/
-/* }*/
-/*.child_block10 {*/
-/*    position: absolute;*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    background-image: url("/images/images.jpeg");*/
-/*    background-position: top center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
-/*.child_block11 {*/
-/*    position: absolute;*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    background-image: url("/images/images.jpeg");*/
-/*    background-position: top center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
-/*.child_block12 {*/
-/*    position: absolute;*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    background-image: url("/images/images.jpeg");*/
-/*    background-position: top center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
-/*.child_block13 {*/
-/*    position: absolute;*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    background-image: url("/images/images.jpeg");*/
-/*    background-position: top center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
-/*.child_block14 {*/
-/*    position: absolute;*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    background-color: red;*/
-/*    border-radius: 50%;*/
-/*    background-image: url("/images/images.jpeg");*/
-/*    background-position: top center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
+.child_block2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url("/images/images.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child_block3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url("/images/images.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child_block4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url("/images/images.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child_block5 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url("/images/images.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child_block6 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url("/images/images.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child_block7 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url("/images/images.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child_block8 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url("/images/images.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}.child_block9 {
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     background-color: red;
+     border-radius: 50%;
+     background-image: url("/images/images.jpeg");
+     background-position: top center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+.child_block10 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url("/images/images.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child_block11 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url("/images/images.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child_block12 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url("/images/images.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child_block13 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url("/images/images.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child_block14 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url("/images/images.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 .inner_move_block {
@@ -325,7 +326,7 @@
     display: flex;
     justify-content: center;
     font-size: 80px;
-    height: 100px;
+    height: 101px;
     width: 100%;
     border-bottom: 1px solid var(--orange);
     margin-top: 40px;

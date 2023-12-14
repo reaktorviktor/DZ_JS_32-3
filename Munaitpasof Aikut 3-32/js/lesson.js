@@ -12,3 +12,49 @@ phoneButton.onclick = () => {
         phoneResult.style.color = 'red'
     }
 }
+//TAP SLAIDER
+const tabContentBlocks = document.querySelectorAll('.tab_content_block')
+const tabs = document.querySelectorAll('.tab_content_item')
+const tabsParent = document.querySelector('.tab_content_items')
+let currentIndex = 0;
+let sliderInterval
+const hideTapContent = () => {
+    tabContentBlocks.forEach(tabCard => {
+        tabCard.style.display = 'none'
+    })
+    tabs.forEach(tab => {
+        tab.classList.remove('tab_content_item_active')
+    })
+}
+const showTabContent = (tabIndex) => {
+    tabContentBlocks[currentIndex].style.display = 'none'
+    tabs[currentIndex].classList.remove('tab_content_item_active')
+    currentIndex = tabIndex >= tabContentBlocks.length ? 0 : tabIndex
+    tabContentBlocks[currentIndex].style.display = 'block'
+    tabs[currentIndex].classList.add('tab_content_item_active')
+}
+const startSlider = () => {
+    sliderInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % tabContentBlocks.length
+        hideTapContent()
+        showTabContent(currentIndex)
+    }, 3000)
+}
+const stopSlider = () => {
+    clearInterval(sliderInterval)
+}
+hideTapContent()
+showTabContent(0);
+startSlider()
+tabsParent.onclick = (event) => {
+    if (event.target.classList.contains('tab_content_item')) {
+        tabs.forEach((tab, tabIndex) => {
+            if (event.target === tab) {
+                stopSlider()
+                hideTapContent()
+                showTabContent(tabIndex)
+                startSlider()
+            }
+        })
+    }
+}
