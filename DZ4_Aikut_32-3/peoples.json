@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Luffy",
+    "age": 19,
+    "job": "Pirate captain",
+    "race": "Human"
+  },
+  {
+    "name": "Zoro",
+    "age": 21,
+    "job": "Swordsmen",
+    "race": "Human"
+  },
+  {
+    "name": "Nami",
+    "age": 19,
+    "job": "Navigator",
+    "race": "Human"
+  },
+  {
+    "name": "Usopp",
+    "age": "19",
+    "job": "Sniper",
+    "race": "Human"
+  },
+  {
+    "name": "Sanji",
+    "age": 21,
+    "job": "Cook",
+    "race": "Modified human"
+  },
+  {
+    "name": "Chopper",
+    "age": 17,
+    "job": "Doctor",
+    "race": "Animal"
+  },
+  {
+    "name": "Robin",
+    "age": 30,
+    "job": "Archaeologist",
+    "race": "Human"
+  },
+  {
+    "name": "Franky",
+    "age": 36,
+    "job": "Shipwright",
+    "race": "Cyborg"
+  },
+  {
+    "name": "Brook",
+    "age": 90,
+    "job": "Musician",
+    "race": "Died human"
+  },
+  {
+    "name": "Jinbe",
+    "age": 46,
+    "job": "Helmsman",
+    "race": "Fish-Man"
+  }
+]
