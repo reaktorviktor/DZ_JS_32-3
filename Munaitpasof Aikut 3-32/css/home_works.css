@@ -13,7 +13,7 @@
     justify-content: space-evenly;
     border: 1px solid var(--orange);
     height: 300px;
-    border-radius: 20px;
+    border-radius: 21px;
     align-items: center;
     background-image: url("/images/one-piece-anime.gif");
     background-position: top center;
@@ -29,7 +29,7 @@
 
 .form_gmail button {
     width: 100%;
-    margin: 20px 0;
+    margin: 21px 0;
 }
 
 /* MOVE BLOCK */
@@ -40,8 +40,8 @@
 }
 
 .parent_block {
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
     border: 1px solid var(--orange);
     position: relative;
     margin: auto;
@@ -49,7 +49,7 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    /*border-radius: 50%;*/
+    border-radius: 30%;
     overflow: hidden;
 }
 
@@ -62,19 +62,22 @@
 
 .child_block1 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .child_block2 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -84,8 +87,8 @@
 }
 .child_block3 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -95,8 +98,8 @@
 }
 .child_block4 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -106,8 +109,8 @@
 }
 .child_block5 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -117,8 +120,8 @@
 }
 .child_block6 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -128,8 +131,8 @@
 }
 .child_block7 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -139,8 +142,8 @@
 }
 .child_block8 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -149,8 +152,8 @@
     background-size: cover;
 }.child_block9 {
      position: absolute;
-     width: 20px;
-     height: 20px;
+     width: 50px;
+     height: 50px;
      background-color: red;
      border-radius: 50%;
      background-image: url("/images/images.jpeg");
@@ -160,8 +163,8 @@
  }
 .child_block10 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -171,8 +174,8 @@
 }
 .child_block11 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -182,8 +185,8 @@
 }
 .child_block12 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -193,8 +196,8 @@
 }
 .child_block13 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -204,8 +207,8 @@
 }
 .child_block14 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     border-radius: 50%;
     background-image: url("/images/images.jpeg");
@@ -237,7 +240,7 @@
     width: 8px;
     height: 1px;
     background: #fff9;
-    line-height: 20px;
+    line-height: 21px;
     transform-origin: 50%;
     z-index: 5;
     inset: 0;

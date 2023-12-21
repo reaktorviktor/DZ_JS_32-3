@@ -58,3 +58,54 @@ tabsParent.onclick = (event) => {
         })
     }
 }
+
+//convertor
+
+
+// som.addEventListener('input', () => {
+//     const xhr = new XMLHttpRequest()
+//     xhr.open('GET', '../data/converter.json')
+//     xhr.setRequestHeader('Content-type', 'application/json')
+//     xhr.send()
+//     xhr.addEventListener('load', () => {
+//         const data = JSON.parse(xhr.response)
+//         usd.value = (som.value / data.usd).toFixed(2)
+//     })
+// })
+// usd.addEventListener('input', () => {
+//     const xhr = new XMLHttpRequest()
+//     xhr.open('GET', '../data/converter.json')
+//     xhr.setRequestHeader('Content-type', 'application/json')
+//     xhr.send()
+//     xhr.addEventListener('load', () => {
+//         const data = JSON.parse(xhr.response)
+//         som.value = (usd.value * data.usd).toFixed(2)
+//     })
+// })
+
+// DRY - Don`t repeat yourself
+const usd = document.querySelector('#usd')
+const som = document.querySelector('#som')
+
+const conventer = (element, targetElement, current) => {
+    element.oninput = () => {
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', '../data/converter.json')
+    xhr.setRequestHeader('Content-type', 'application/json')
+    xhr.send()
+    xhr.onload = () => {
+        const data = JSON.parse(xhr.response)
+        switch (current) {
+            case 'som':
+                targetElement.value = (element.value / data.usd).toFixed(2)
+                break
+            case 'usd':
+                targetElement.value = (element.value * data.usd).toFixed(2)
+                break
+        }
+        element.value === '' && (targetElement.value = '')
+    }
+    }
+}
+conventer(som, usd, 'som')
+conventer(usd, som, 'usd')
