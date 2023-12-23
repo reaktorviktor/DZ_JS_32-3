@@ -61,76 +61,10 @@ tabsParent.onclick = (event) => {
 
 //convertor
 // DRY - Don`t repeat yourself
-// const usd = document.querySelector('#usd')
-// const som = document.querySelector('#som')
-//
-// const conventer = (element, targetElement, current) => {
-//     element.oninput = () => {
-//     const xhr = new XMLHttpRequest()
-//     xhr.open('GET', '../data/converter.json')
-//     xhr.setRequestHeader('Content-type', 'application/json')
-//     xhr.send()
-//     xhr.onload = () => {
-//         const data = JSON.parse(xhr.response)
-//         switch (current) {
-//             case 'som':
-//                 targetElement.value = (element.value / data.usd).toFixed(2)
-//                 break
-//             case 'usd':
-//                 targetElement.value = (element.value * data.usd).toFixed(2)
-//                 break
-//         }
-//         element.value === '' && (targetElement.value = '')
-//     }
-//     }
-// }
-// conventer(som, usd, 'som')
-// conventer(usd, som, 'usd')
-
-
-// const usd = document.querySelector('#usd');
-// const som = document.querySelector('#som');
-// const belli = document.querySelector('#belli');
-//
-// const converter = (element, targetElements, current) => {
-//     element.addEventListener('input', () => {
-//         const xhr = new XMLHttpRequest();
-//         xhr.open('GET', '../data/converter.json');
-//         xhr.setRequestHeader('Content-type', 'application/json');
-//         xhr.send();
-//
-//         xhr.onload = () => {
-//             const data = JSON.parse(xhr.responseText);
-//             switch (current) {
-//                 case 'som':
-//                     targetElements.usd.value = (element.value / data.som_to_usd).toFixed(2);
-//                     targetElements.belli.value = (element.value / data.som_to_belli).toFixed(2);
-//                     break;
-//                 case 'usd':
-//                     targetElements.som.value = (element.value * data.som_to_usd).toFixed(2);
-//                     targetElements.belli.value = ((element.value * data.som_to_usd) / data.som_to_belli).toFixed(2);
-//                     break;
-//                 case 'belli':
-//                     targetElements.som.value = (element.value * data.som_to_belli).toFixed(2);
-//                     targetElements.usd.value = ((element.value * data.som_to_belli) / data.som_to_usd).toFixed(2);
-//                     break;
-//             }
-//             if (element.value === '') {
-//                 Object.values(targetElements).forEach(target => (target.value = ''));
-//             }
-//         };
-//     });
-// };
-//
-// converter(som, { usd, belli }, 'som');
-// converter(usd, { som, belli }, 'usd');
-// converter(belli, { som, usd }, 'belli');
-
-
 document.addEventListener('DOMContentLoaded', () => {
-    const somInput = document.getElementById('som');
-    const usdInput = document.getElementById('usd');
-    const belliInput = document.getElementById('belli');
+    const somInput = document.getElementById('som')
+    const usdInput = document.getElementById('usd')
+    const belliInput = document.getElementById('belli')
     const converter = (element, targetElements, current) => {
         element.addEventListener('input', () => {
             fetch('../data/converter.json')
@@ -151,14 +85,14 @@ document.addEventListener('DOMContentLoaded', () => {
                             break;
                     }
                     if (element.value === '') {
-                        Object.values(targetElements).forEach(target => (target.value = ''));
+                        Object.values(targetElements).forEach(target => (target.value = ''))
                     }
                 })
         })
     }
-    converter(somInput, { usd: usdInput, belli: belliInput }, 'som');
-    converter(usdInput, { som: somInput, belli: belliInput }, 'usd');
-    converter(belliInput, { som: somInput, usd: usdInput }, 'belli');
+    converter(somInput, { usd: usdInput, belli: belliInput }, 'som')
+    converter(usdInput, { som: somInput, belli: belliInput }, 'usd')
+    converter(belliInput, { som: somInput, usd: usdInput }, 'belli')
 })
 
 
