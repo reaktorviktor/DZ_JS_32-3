@@ -1,3 +1,4 @@
+
 .header {
     height: 80px;
     background: #2c2d2f;
@@ -34,12 +35,16 @@
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    transition: 500ms;
 }
 .logotype:hover {
     background-image: url("/images/van-pis-1074-seriya-2.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 500ms;
+    transform: scale(120%);
+
 }
 
 /* HEADER MENU */
@@ -53,21 +58,24 @@
 .menu_link a {
     color: var(--orange);
     text-transform: uppercase;
+    transition: 500ms;
 }
 
 .menu_link a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    transition: 500ms;
+    font-size: 25px;
 }
 
 /* MAIN BLOCK */
 
 .main_block {
     padding: 100px 0;
-    /*background: black;*/
-    background-image: url("/images/Bgc one piese.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: black;
+    /*background-image: url("/images/Bgc one piese.jpg");*/
+    /*background-position: top center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
 }
 
 /* BUTTONS COLOR PICKER */
@@ -108,10 +116,11 @@
 
 .slider_block {
     padding: 100px 0;
-    background-image: url("/images/Bgc one piese.jpg");
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: black;
+    /*background-image: url("/images/Bgc one piese.jpg");*/
+    /*background-position: bottom center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
 
 }
 

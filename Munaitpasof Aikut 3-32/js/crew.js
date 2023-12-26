@@ -1,39 +1,49 @@
-function displayCharacters(characters) {
-    const charactersDiv = document.getElementById('characters');
+document.addEventListener('DOMContentLoaded', function() {
+    const charactersContainer = document.getElementById('characters-container');
 
-    characters.forEach(character => {
-        const characterCard = document.createElement('div');
-        characterCard.classList.add('character-card');
+    function createCharacterCard(character) {
+        const card = document.createElement('div');
+        card.classList.add('card');
 
-        const name = document.createElement('h2');
-        name.textContent = character.name;
-        characterCard.appendChild(name);
+        const name = document.createElement('h3');
+        name.textContent = ` ${character.name}`;
+        card.appendChild(name);
+
+        const image = document.createElement('img');
+        image.src = character.photo;
+        image.alt = character.name + ' photo';
+        card.appendChild(image);
 
         const age = document.createElement('p');
         age.textContent = `Age: ${character.age}`;
-        characterCard.appendChild(age);
+        card.appendChild(age);
 
-        // Добавьте другие данные, если необходимо
+        const job = document.createElement('p');
+        job.textContent = `Job: ${character.job}`;
+        card.appendChild(job);
 
-        charactersDiv.appendChild(characterCard);
-    });
-}
+        const race = document.createElement('p');
+        race.textContent = `Race: ${character.race}`;
+        card.appendChild(race);
 
-// Путь к локальному файлу JSON
-const url = 'data/peoples.json';
+        const bounty = document.createElement('p');
+        bounty.textContent = `Bounty: ${character.bounty}`;
+        card.appendChild(bounty);
 
-// Асинхронная загрузка JSON-файла
-// fetch(url)
-//     .then(response => {
-//         if (!response.ok) {
-//             throw new Error(`Ошибка HTTP: ${response.status}`);
-//         }
-//         return response.json();
-//     })
-//     .then(data => {
-//         displayCharacters(data);
-//     })
-//     .catch(error => {
-//         console.error('Ошибка загрузки данных:', error);
-//     });
+        return card;
+    }
 
+    function displayCharacters(characters) {
+        characters.forEach(character => {
+            const card = createCharacterCard(character);
+            charactersContainer.appendChild(card);
+        });
+    }
+
+    // Подставьте ваш реальный URL сервера или путь к JSON файлу
+    fetch('/data/peoples.json')
+        .then(response => response.json())
+        .then(data => {
+            displayCharacters(data);
+        })
+});

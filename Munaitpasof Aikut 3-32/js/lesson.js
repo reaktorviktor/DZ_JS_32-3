@@ -58,13 +58,10 @@ tabsParent.onclick = (event) => {
         })
     }
 }
-
-//convertor
-// DRY - Don`t repeat yourself
 document.addEventListener('DOMContentLoaded', () => {
-    const somInput = document.getElementById('som')
-    const usdInput = document.getElementById('usd')
-    const belliInput = document.getElementById('belli')
+    const somInput = document.getElementById('som');
+    const usdInput = document.getElementById('usd');
+    const belliInput = document.getElementById('belli');
     const converter = (element, targetElements, current) => {
         element.addEventListener('input', () => {
             fetch('../data/converter.json')
@@ -85,14 +82,53 @@ document.addEventListener('DOMContentLoaded', () => {
                             break;
                     }
                     if (element.value === '') {
-                        Object.values(targetElements).forEach(target => (target.value = ''))
+                        Object.values(targetElements).forEach(target => (target.value = ''));
                     }
                 })
         })
     }
-    converter(somInput, { usd: usdInput, belli: belliInput }, 'som')
-    converter(usdInput, { som: somInput, belli: belliInput }, 'usd')
-    converter(belliInput, { som: somInput, usd: usdInput }, 'belli')
+    converter(somInput, { usd: usdInput, belli: belliInput }, 'som');
+    converter(usdInput, { som: somInput, belli: belliInput }, 'usd');
+    converter(belliInput, { som: somInput, usd: usdInput }, 'belli');
 })
+
+//CARD SWITCHER
+const card = document.querySelector('.card');
+const btnNext = document.querySelector('#btn-next');
+const btnPrev = document.querySelector('#btn-prev');
+let countCard = 1;
+
+// Функция для загрузки карточки по номеру
+function loadCard(cardNumber) {
+    fetch(`https://jsonplaceholder.typicode.com/todos/${cardNumber}`)
+        .then(response => response.json())
+        .then(data => {
+            card.innerHTML = `
+                <p>${data.title}</p>
+                <p style="color: ${data.completed ? 'green' : 'red'}">${data.completed}</p>
+                <span>${data.id}</span>
+            `;
+        });
+}
+
+btnNext.addEventListener('click', () => {
+    countCard = (countCard === 200) ? 1 : countCard + 1;
+    loadCard(countCard);
+});
+
+btnPrev.addEventListener('click', () => {
+    countCard = (countCard === 1) ? 200 : countCard - 1;
+    loadCard(countCard);
+});
+
+// Загрузка первой карточки при загрузке страницы
+loadCard(countCard);
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+
 
 

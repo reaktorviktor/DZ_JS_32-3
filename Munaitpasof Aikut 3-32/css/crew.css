@@ -1,13 +1,28 @@
-.character-card {
-    border: 1px solid #ccc;
+.characters-container {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1380px;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card {
+    width: 680px;
     padding: 10px;
-    margin: 10px;
-    width: 300px;
+    border: red solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    color: red;
+    font-size: 25px;
+}
+.card img {
+    border-radius: 15px;
+    width: 600px;
 }
 
-.character-photo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-}

@@ -4,60 +4,80 @@
     "age": 19,
     "job": "Pirate captain",
     "race": "Human",
-    "photo": "https://static.wikia.nocookie.net/onepiece/images/1/17/Monkey_D._Luffy%27s_Seventh_Wanted_Poster.png/revision/latest/scale-to-width-down/120?cb=20231212105248"
+    "photo": "https://i.pinimg.com/originals/2f/56/90/2f5690ee185f5345025b1a5b0bf2c8aa.gif",
+    "bounty": "3,000,000,000 Belli"
   },
   {
     "name": "Zoro",
     "age": 21,
     "job": "Swordsmen",
-    "race": "Human"
+    "race": "Human",
+    "photo": "https://www.icegif.com/wp-content/uploads/2022/10/icegif-956.gif",
+    "bounty": "1,111,000,000 Belli"
+
   },
   {
     "name": "Nami",
     "age": 19,
     "job": "Navigator",
-    "race": "Human"
+    "race": "Human",
+    "photo": "https://64.media.tumblr.com/a66573a5ab9c7b1b539930137f7d8476/a986f90f233c381e-65/s1280x1920/33a45a1dd16b1ce9d720d07a07df1ffad97b76b0.gif",
+    "bounty": "366,000,000 Belli"
   },
   {
     "name": "Usopp",
     "age": "19",
     "job": "Sniper",
-    "race": "Human"
+    "race": "Human",
+    "photo": "https://gifdb.com/images/high/one-piece-usopp-grinning-pa64fhogd56857pg.gif",
+    "bounty": "500,000,000 Belli"
   },
   {
     "name": "Sanji",
     "age": 21,
     "job": "Cook",
-    "race": "Modified human"
+    "race": "Modified human",
+    "photo": "https://64.media.tumblr.com/7c85a834ea722bfde053fa6e902f7797/39fafd63a2c3f3b4-60/s1280x1920/2d8269877d2047f04a46aa0639999a1447a6dcb0.gifv",
+    "bounty": "1,032,000,000 Belli"
   },
   {
     "name": "Chopper",
     "age": 17,
     "job": "Doctor",
-    "race": "Animal"
+    "race": "Animal",
+    "photo": "https://i.imgur.com/Gf1RrXH.gif",
+    "bounty": "1,000 Belli"
   },
   {
     "name": "Robin",
     "age": 30,
     "job": "Archaeologist",
-    "race": "Human"
+    "race": "Human",
+    "photo": "https://i.pinimg.com/originals/36/24/a5/3624a5bee971ceafbf0fb8bbb07d92b5.gif",
+    "bounty": "930,000,000 Belli"
   },
   {
     "name": "Franky",
     "age": 36,
     "job": "Shipwright",
-    "race": "Cyborg"
+    "race": "Cyborg",
+    "photo": "https://64.media.tumblr.com/98c1d87371da936b512d6feb36174a02/68ff99d2798fb208-8c/s1280x1920/800b22f329881530095ea99159f0c561213cecdb.gif",
+    "bounty": "394,000,000 Belli"
   },
   {
     "name": "Brook",
     "age": 90,
     "job": "Musician",
-    "race": "Died human"
+    "race": "Died human",
+    "photo": "https://64.media.tumblr.com/2f15e48b3330b7450374aba9017d8e9f/abe0a64cd4cc5d7a-5a/s540x810/b9758f16af5441f83ab587d1f7d3d3e70efb31af.gif",
+    "bounty": "383,000,000 Belli"
   },
   {
     "name": "Jinbe",
     "age": 46,
     "job": "Helmsman",
-    "race": "Fish-Man"
+    "race": "Fish-Man",
+    "photo": "https://c.tenor.com/92P0V36zt0cAAAAC/jimbei-jinbe.gif",
+    "bounty": "1,100,000,000 Belli"
   }
 ]

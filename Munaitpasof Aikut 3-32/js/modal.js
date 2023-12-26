@@ -23,23 +23,35 @@ const handleScroll = () => {
 }
 window.addEventListener('scroll', handleScroll)
 
-const form = document.querySelector('form')
+// const form = document.querySelector('form')
 
-const postData = (formElement) => {
-    formElement.addEventListener('submit', (event) => {
-    event.preventDefault()
-        const request = new XMLHttpRequest()
-        request.open('POST', 'server.php')
-        request.setRequestHeader('Content-type', 'application/json')
-
-        const formData = new FormData(formElement)
-        const obj = {}
-        formData.forEach((item, index) => {
-            obj[index] = item
-        })
-        const json = JSON.stringify(obj)
-        request.send(json)
-})
-}
-postData(form)
-
+// const postData = (formElement) => {
+//     formElement.addEventListener('submit', (event) => {
+//     event.preventDefault()
+//         const request = new XMLHttpRequest()
+//         request.open('POST', 'server.php')
+//         request.setRequestHeader('Content-type', 'application/json')
+//
+//         const formData = new FormData(formElement)
+//         const obj = {}
+//         formData.forEach((item, index) => {
+//             obj[index] = item
+//         })
+//         const json = JSON.stringify(obj)
+//         request.send(json)
+// })
+// }
+// postData(form)
+// const form = document.querySelector('form')
+// const postdata = (url, data) => {
+//     fetch(url, {
+//
+//     })
+// }
+//
+// const bindPostData = (formElement) => {
+//     formElement.onsubmit = (event) => {
+//         event.preventDefault()
+//         const
+//     }
+// }
