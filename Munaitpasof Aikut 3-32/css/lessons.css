@@ -15,9 +15,10 @@
     border-radius: 20px;
     align-items: center;
     background-image: url("/images/jjluffy.gif");
-    background-position: top center;
+    background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .form_phone {
@@ -50,13 +51,13 @@
     flex-direction: column;
     justify-content: center;
     height: 220px;
-    transition: 0.5s;
+    transition: 500ms;
 }
-
 .tab_content_block p {
     color: white;
     margin-top: 10px;
     text-align: justify;
+    transition: 500ms;
 }
 
 .tab_content_items {
@@ -78,14 +79,18 @@
     display: grid;
     place-content: center;
     border-radius: 30px;
-    transition: 0.5s;
+    transition: 400ms;
 }
-
+.tab_content_item:hover {
+    transition: 500ms;
+    transform: scale(105%);
+}
 .tab_content_item_active {
     background: var(--orange);
     color: black;
     font-weight: 600;
     border: 1px solid white;
+    transform: scale(105%);
 }
 
 .tab_contents_block {
@@ -95,9 +100,7 @@
     margin-top: 50px;
     transition: 0.5s;
 }
-
 /*------CARD SWITCHER------*/
-
 .card_switcher {
     background-color: black;
     padding: 100px 0;
@@ -113,7 +116,9 @@
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    transition: 500ms;
 }
+
 
 .card p {
     color: var(--orange);
@@ -124,14 +129,13 @@
     color: white;
     font-size: 30px;
 }
-
 .inner_card_switcher {
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
+}
 
 /*-------CONVERTER--------*/
 

@@ -1,4 +1,26 @@
 .cards {
-    height: 100vh;
-    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: white;
+    font-size: 16px;
+    padding-top: 150px;
+}
+.card {
+    width: 340px;
+    height: 500px;
+    border-radius: 10px;
+    border: #b70707 5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+.card img {
+    margin-top: 10px;
+    width: 290px;
+    height: auto;
+    border-radius: 10px;
 }

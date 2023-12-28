@@ -46,4 +46,4 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             displayCharacters(data);
         })
-});
+})

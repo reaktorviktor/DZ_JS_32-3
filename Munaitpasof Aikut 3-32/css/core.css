@@ -24,7 +24,6 @@ body {
     color: var(--orange);
     border-radius: 8px;
     transition: 500ms;
-
 }
 
 .btn:hover {
@@ -131,6 +130,6 @@ input {
 
 :root {
     --orange: #b70707;
-    --black: #000000;
+    --black: #000000
 
 }

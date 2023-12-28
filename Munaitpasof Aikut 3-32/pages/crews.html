@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../css/crew.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/core.css">
-    <link rel="stylesheet" href="../css/cards.css">
 </head>
 <body>
 
@@ -27,7 +26,10 @@
                         <a href="../pages/lessons.html">Lessons</a>
                     </li>
                     <li class="menu_link">
-                        <a href="crews.html">Crew</a>
+                        <a href="crews.html">Crews</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="../pages/cards.html">Cards</a>
                     </li>
                 </ul>
                 <button class="btn" id="btn-get">Click me!</button>
@@ -45,6 +47,39 @@
         </div>
     </div>
 </div>
+<div class="modal">
+    <div class="modal_dialog">
+        <div class="modal_content">
+            <form action="#">
+                <div class="modal_close">&times;</div>
+                <div class="modal_title">Осатавте заявку на вступление в Пиратскую команду!!</div>
+                <input
+                        required
+                        placeholder="Ваше имя"
+                        name="name"
+                        type="text"
+                        class="modal_input"
+                >
+                <input
+                        required
+                        placeholder="Ваш номер телефона"
+                        name="phone"
+                        type="text"
+                        class="modal_input"
+                >
+                <input
+                        required
+                        placeholder="Ваша награда за голову"
+                        name=""
+                        type="number"
+                        class="modal_input"
+                >
+                <button class="btn btn_dark btn_min">Оставить заявку</button>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 <script src="/js/crew.js"></script>
+<script src="/js/modal.js"></script>
 </html>
